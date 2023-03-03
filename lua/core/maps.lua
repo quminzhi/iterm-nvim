@@ -14,11 +14,16 @@ keymap.set('n', '<leader><down>', '<cmd>wincmd j<cr>', { silent = true })
 keymap.set('n', '<leader><left>', '<cmd>wincmd h<cr>', { silent = true })
 keymap.set('n', '<leader><right>', '<cmd>wincmd l<cr>', { silent = true })
 
+keymap.set('n', '<leader>k', '<cmd>wincmd k<cr>', { silent = true })
+keymap.set('n', '<leader>j', '<cmd>wincmd j<cr>', { silent = true })
+keymap.set('n', '<leader>h', '<cmd>wincmd h<cr>', { silent = true })
+keymap.set('n', '<leader>l', '<cmd>wincmd l<cr>', { silent = true })
+
 -- key map
 keymap.set('n', 'Z', '')
 keymap.set('n', 'ZZ', '')
 
-keymap.set('n', '4', '$')
+keymap.set('n', 'J', 'G')
 keymap.set('x', '4', '$')
 keymap.set('n', 'H', '^')
 keymap.set('n', 'L', '$')
@@ -30,7 +35,7 @@ keymap.set('n', '<tab>', '.')
 keymap.set('i', 'fj', '<esc>', { silent = true })
 
 keymap.set('n', '<c-a>', 'gg<S-v>G', { silent = true })
-keymap.set('n', '<Leader>h', ':nohlsearch<cr>', { silent = true })
+keymap.set('n', '<Leader>n', ':nohlsearch<cr>', { silent = true })
 
 -- Packer
 keymap.set('n', '<Leader>pi', '<cmd>PackerInstall<cr>')
